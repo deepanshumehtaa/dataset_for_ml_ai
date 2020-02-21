@@ -1,3 +1,9 @@
+url = 'https://raw.githubusercontent.com/deepanshumehtaa/csvfiles/master/xyz.csv'
+df = pd.read_csv(url, index_col=0, delimiter=',')
+df = df.reset_index()
+df.head(5)
+
+
 # csvfiles
 use this to access csv file
 for inbuilt datasets lik iris to load them use
