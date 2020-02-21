@@ -1,7 +1,7 @@
-url = 'https://raw.githubusercontent.com/deepanshumehtaa/csvfiles/master/xyz.csv'
-df = pd.read_csv(url, index_col=0, delimiter=',')
-df = df.reset_index()
-df.head(5)
+    url = 'https://raw.githubusercontent.com/deepanshumehtaa/csvfiles/master/xyz.csv'
+    df = pd.read_csv(url, index_col=0, delimiter=',')
+    df = df.reset_index()
+    df.head(5)
 
 
 # csvfiles
