@@ -26,6 +26,8 @@ For Seaborn Dataset
     
 For Sklearn
 
+befor you start with sea born database https://medium.com/@haydar_ai/learning-data-science-day-9-linear-regression-on-boston-housing-dataset-cd62a80775ef
+
     from sklearn.datasets import load_iris
     sk_data = load_iris()
     print(sk_data)
