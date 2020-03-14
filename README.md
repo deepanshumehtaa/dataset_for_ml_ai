@@ -42,3 +42,16 @@ For all the Datasets present for ML
     import seaborn as sb
     df = sns.load_dataset('iris')
     print( sns.get_dataset_names() )
+    
+    
+ To split the data without train_test_split
+ 
+    # splitting the data BUT, not randomly
+    X =df.drop(['car'], axis=1)
+    y =df.car
+
+    train_index = int(0.8 * len(X))
+    X_train, X_test = X[:train_index], X[train_index:]
+    y_train, y_test = y[:train_index], y[train_index:]
+    
+ .
