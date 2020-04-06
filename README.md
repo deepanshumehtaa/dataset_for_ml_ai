@@ -4,7 +4,6 @@
     df.head(5)
 
 
-# csvfiles
 use this to access csv file
 for inbuilt datasets lik iris to load them use
 
@@ -55,4 +54,15 @@ For all the Datasets present for ML
     y_train, y_test = y[:train_index], y[train_index:]
     
  .
-Follow this Documentation for Keras Dataset: https://jovianlin.io/datasets-within-keras/
+Follow this Documentation for Keras Dataset: https://jovianlin.io/datasets-within-keras
+
+# From G-Drive
+
+    import pandas as pd
+    import requests
+    from io import StringIO
+
+    url = requests.get('https://doc-0g-78docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/5otus4mg51j69f99n47jgs0t374r46u3/1560607200000/09837260612050622056/*/0B6GhBwm5vaB2ekdlZW5WZnppb28?e=download')
+    csv_raw = StringIO(url.text)
+    df = pd.read_csv(csv_raw)
+
