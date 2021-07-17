@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
     url = 'https://raw.githubusercontent.com/deepanshumehtaa/csvfiles/master/xyz.csv'
     df = pd.read_csv(url, index_col=0, delimiter=',')
     df = df.reset_index()
@@ -57,7 +57,7 @@ For all the Datasets present for ML
     
  .
 Follow this Documentation for Keras Dataset: https://jovianlin.io/datasets-within-keras/
-=======
+
     url = 'https://raw.githubusercontent.com/deepanshumehtaa/csvfiles/master/xyz.csv'
     df = pd.read_csv(url, index_col=0, delimiter=',')
     df = df.reset_index()
@@ -126,4 +126,3 @@ Follow this Documentation for Keras Dataset: https://jovianlin.io/datasets-withi
     csv_raw = StringIO(url.text)
     df = pd.read_csv(csv_raw)
 
->>>>>>> fcd35ee5e70b4c449a8d79ecca3e0cee68b2e859
