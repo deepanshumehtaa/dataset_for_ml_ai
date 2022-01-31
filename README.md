@@ -122,7 +122,7 @@ Follow this Documentation for Keras Dataset: https://jovianlin.io/datasets-withi
     import requests
     from io import StringIO
 
-    url = requests.get('https://doc-0g-78docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/5otus4mg51j69f99n47jgs0t374r46u3/1560607200000/09837260612050622056/*/0B6GhBwm5vaB2ekdlZW5WZnppb28?e=download')
+    url = requests.get('https://doc-0g-78docs.googleusercontent.com/docs/securesc/token')
     csv_raw = StringIO(url.text)
     df = pd.read_csv(csv_raw)
 
