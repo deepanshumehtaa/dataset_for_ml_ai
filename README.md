@@ -126,3 +126,41 @@ Follow this Documentation for Keras Dataset: https://jovianlin.io/datasets-withi
     csv_raw = StringIO(url.text)
     df = pd.read_csv(csv_raw)
 
+
+# Download Dataset from Kaggle using kaggle API
+
+"""
+!pip install -q kaggle: installing this packageing but quitely with no loading bars
+
+
+!mkdir -p ~/.kaggle
+
+the command is creating a -p as parent directory if not exist at root(~/) 
+
+!cp kaggle.json ~/.kaggle/
+
+copy the api secrete key to main kaggle folder
+Ensure kaggle.json is in the location ~/.kaggle/kaggle.json to use the API.
+
+!ls ~/.kaggle
+if present return nothing else error
+
+!chmod 600 /root/.kaggle/kaggle.json 
+-- 600 permissions means that only the owner of the file has full read and write access to it. 
+   Once a file permission is set to 600, no one else can access the file.
+
+calling kaggle api with kaggle's python package:
+!kaggle datasets download -d emmarex/plantdisease
+"""
+!pip install -q kaggle
+!mkdir -p ~/.kaggle
+!cp <your_key_file>.json ~/.kaggle/
+!ls ~/.kaggle
+!mv '/root/.kaggle/<your_key_file>.json' '/root/.kaggle/kaggle.json' 
+!chmod 600 /root/.kaggle/kaggle.json  # set permission
+
+# Run the Download API
+!kaggle datasets download -d devashish0507/big-mart-sales-prediction
+
+# Unzip that also
+!unzip plantdisease.zip
