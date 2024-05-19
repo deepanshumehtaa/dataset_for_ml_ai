@@ -1,4 +1,6 @@
 
+    import pandas
+    
     url = 'https://raw.githubusercontent.com/deepanshumehtaa/csvfiles/master/xyz.csv'
     df = pd.read_csv(url, index_col=0, delimiter=',')
     df = df.reset_index()
